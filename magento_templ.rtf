@@ -1,0 +1,354 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Menlo-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red200\green20\blue201;\red46\green174\blue187;\red180\green36\blue25;
+\red47\green180\blue29;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh15340\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs34 \cf0 \CocoaLigature0 root@serverwebman-super:/var/www/vhosts/nottefatata.com/httpdocs/app/code# grep -iR smtp ./*\
+\cf2 ./core/Mage/Adminhtml/Model/System/Config/Source/Email/Smtpauth.php\cf3 :\cf0 class Mage_Adminhtml_Model_System_Config_Source_Email
+\f2\b \cf4 Smtp
+\f1\b0 \cf0 auth\
+\cf2 ./core/Mage/Core/etc/system.xml\cf3 :\cf0                 <
+\f2\b \cf4 smtp
+\f1\b0 \cf0  translate="label">\
+\cf2 ./core/Mage/Core/etc/system.xml\cf3 :\cf0                             <source_model>adminhtml/system_config_source_email_
+\f2\b \cf4 smtp
+\f1\b0 \cf0 auth</source_model>\
+\cf2 ./core/Mage/Core/etc/system.xml\cf3 :\cf0                 </
+\f2\b \cf4 smtp
+\f1\b0 \cf0 >\
+\cf2 ./core/Mage/Core/etc/config.xml\cf3 :\cf0             <
+\f2\b \cf4 smtp
+\f1\b0 \cf0 >\
+\cf2 ./core/Mage/Core/etc/config.xml\cf3 :\cf0             </
+\f2\b \cf4 smtp
+\f1\b0 \cf0 >\
+\cf2 ./core/Mage/Core/etc/system.xml_\cf3 :\cf0                 <
+\f2\b \cf4 smtp
+\f1\b0 \cf0  translate="label">\
+\cf2 ./core/Mage/Core/etc/system.xml_\cf3 :\cf0                             <source_model>adminhtml/system_config_source_email_
+\f2\b \cf4 smtp
+\f1\b0 \cf0 auth</source_model>\
+\cf2 ./core/Mage/Core/etc/system.xml_\cf3 :\cf0                 </
+\f2\b \cf4 smtp
+\f1\b0 \cf0 >\
+\cf2 ./core/Mage/Core/Model/Email.php\cf3 :\cf0         if (Mage::getStoreConfigFlag('system/
+\f2\b \cf4 smtp
+\f1\b0 \cf0 /disable')) \{\
+\cf2 ./core/Mage/Core/Model/Email/Template.php\cf3 :\cf0     const XML_PATH_SENDING_SET_RETURN_PATH      = 'system/
+\f2\b \cf4 smtp
+\f1\b0 \cf0 /set_return_path';\
+\cf2 ./core/Mage/Core/Model/Email/Template.php\cf3 :\cf0     const XML_PATH_SENDING_RETURN_PATH_EMAIL    = 'system/
+\f2\b \cf4 smtp
+\f1\b0 \cf0 /return_path_email';\
+\cf2 ./core/Mage/Core/Model/Email/Template.php\cf3 :\cf0         return !Mage::getStoreConfigFlag('system/
+\f2\b \cf4 smtp
+\f1\b0 \cf0 /disable')\
+\cf2 ./core/Mage/Core/Model/Email/Template.php\cf3 :\cf0         ini_set('
+\f2\b \cf4 SMTP
+\f1\b0 \cf0 ', Mage::getStoreConfig('system/
+\f2\b \cf4 smtp
+\f1\b0 \cf0 /host'));\
+\cf2 ./core/Mage/Core/Model/Email/Template.php\cf3 :\cf0         ini_set('
+\f2\b \cf4 smtp
+\f1\b0 \cf0 _port', Mage::getStoreConfig('system/
+\f2\b \cf4 smtp
+\f1\b0 \cf0 /port'));\
+\cf2 ./core/Mage/Core/Model/Email/Queue.php\cf3 :\cf0         ini_set('
+\f2\b \cf4 SMTP
+\f1\b0 \cf0 ', Mage::getStoreConfig('system/
+\f2\b \cf4 smtp
+\f1\b0 \cf0 /host'));\
+\cf2 ./core/Mage/Core/Model/Email/Queue.php\cf3 :\cf0         ini_set('
+\f2\b \cf4 smtp
+\f1\b0 \cf0 _port', Mage::getStoreConfig('system/
+\f2\b \cf4 smtp
+\f1\b0 \cf0 /port'));\
+\cf2 ./core/Mage/Newsletter/Model/Template.php\cf3 :\cf0         return !Mage::getStoreConfigFlag('system/
+\f2\b \cf4 smtp
+\f1\b0 \cf0 /disable')\
+\cf2 ./core/Mage/Newsletter/Model/Template.php\cf3 :\cf0         ini_set('
+\f2\b \cf4 SMTP
+\f1\b0 \cf0 ', Mage::getStoreConfig('system/
+\f2\b \cf4 smtp
+\f1\b0 \cf0 /host'));\
+\cf2 ./core/Mage/Newsletter/Model/Template.php\cf3 :\cf0         ini_set('
+\f2\b \cf4 smtp
+\f1\b0 \cf0 _port', Mage::getStoreConfig('system/
+\f2\b \cf4 smtp
+\f1\b0 \cf0 /port'));\
+\cf2 ./local/Aschroder/SMTPPro/sql/smtppro_setup/mysql4-install-1.1.0.php\cf3 :\cf0 Mage::helper('
+\f2\b \cf4 smtp
+\f1\b0 \cf0 pro/mysql4_install')->prepareForDb();\
+\cf2 ./local/Aschroder/SMTPPro/sql/smtppro_setup/mysql4-install-1.1.0.php\cf3 :
+\f0\fs24 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs34 \cf0 \CocoaLigature0 vi ./base/default/layout/bundle.xml 
+\f0\fs24 \CocoaLigature1 \
+
+\f1\fs34 \CocoaLigature0  
+\f2\b \cf3 <sales_email_order_items>
+\f1\b0 \cf0 \
+        
+\f2\b \cf3 <reference \cf5 name
+\f1\b0 \cf0 =
+\f2\b \cf2 "items"\cf3 >
+\f1\b0 \cf0 \
+            
+\f2\b \cf3 <action \cf5 method
+\f1\b0 \cf0 =
+\f2\b \cf2 "addItemRender"\cf3 ><type>
+\f1\b0 \cf0 bundle
+\f2\b \cf3 </type><block>
+\f1\b0 \cf0 bundle/sales_order_items_renderer
+\f2\b \cf3 </block><templa
+\f1\b0 \cf0 \
+
+\f2\b \cf3 te>
+\f1\b0 \cf0 bundle/email/order/items/order/default.phtml
+\f2\b \cf3 </template></action>
+\f1\b0 \cf0 \
+        
+\f2\b \cf3 </reference>
+\f1\b0 \cf0 \
+    
+\f2\b \cf3 </sales_email_order_items>\
+\
+\
+\
+
+\f1\b0 \cf0 vi base/default/layout/sales.xml 
+\f2\b \cf3 \
+
+\f1\b0 \cf0  
+\f2\b \cf3 <sales_email_order_items>
+\f1\b0 \cf0 \
+        
+\f2\b \cf3 <block \cf5 type
+\f1\b0 \cf0 =
+\f2\b \cf2 "sales/order_email_items"\cf3  \cf5 name
+\f1\b0 \cf0 =
+\f2\b \cf2 "items"\cf3  \cf5 template
+\f1\b0 \cf0 =
+\f2\b \cf2 "email/order/items.phtml"\cf3 >
+\f1\b0 \cf0 \
+            
+\f2\b \cf3 <action \cf5 method
+\f1\b0 \cf0 =
+\f2\b \cf2 "addItemRender"\cf3 ><type>
+\f1\b0 \cf0 default
+\f2\b \cf3 </type><block>
+\f1\b0 \cf0 sales/order_email_items_order_default
+\f2\b \cf3 </block><template>
+\f1\b0 \cf0 email/order/item\
+s/order/default.phtml
+\f2\b \cf3 </template></action>
+\f1\b0 \cf0 \
+            
+\f2\b \cf3 <action \cf5 method
+\f1\b0 \cf0 =
+\f2\b \cf2 "addItemRender"\cf3 ><type>
+\f1\b0 \cf0 grouped
+\f2\b \cf3 </type><block>
+\f1\b0 \cf0 sales/order_email_items_order_grouped
+\f2\b \cf3 </block><template>
+\f1\b0 \cf0 email/order/item\
+s/order/default.phtml
+\f2\b \cf3 </template></action>
+\f1\b0 \cf0 \
+            
+\f2\b \cf3 <block \cf5 type
+\f1\b0 \cf0 =
+\f2\b \cf2 "sales/order_totals"\cf3  \cf5 name
+\f1\b0 \cf0 =
+\f2\b \cf2 "order_totals"\cf3  \cf5 template
+\f1\b0 \cf0 =
+\f2\b \cf2 "sales/order/totals.phtml"\cf3 >
+\f1\b0 \cf0 \
+                
+\f2\b \cf3 <action \cf5 method
+\f1\b0 \cf0 =
+\f2\b \cf2 "setLabelProperties"\cf3 ><value>
+\f1\b0 \cf0 colspan="3" align="right" style="padding:3px 9px"
+\f2\b \cf3 </value></action>
+\f1\b0 \cf0 \
+                
+\f2\b \cf3 <action \cf5 method
+\f1\b0 \cf0 =
+\f2\b \cf2 "setValueProperties"\cf3 ><value>
+\f1\b0 \cf0 align="right" style="padding:3px 9px"
+\f2\b \cf3 </value></action>
+\f1\b0 \cf0 \
+                
+\f2\b \cf3 <block \cf5 type
+\f1\b0 \cf0 =
+\f2\b \cf2 "tax/sales_order_tax"\cf3  \cf5 name
+\f1\b0 \cf0 =
+\f2\b \cf2 "tax"\cf3  \cf5 template
+\f1\b0 \cf0 =
+\f2\b \cf2 "tax/order/tax.phtml"\cf3 >
+\f1\b0 \cf0 \
+                    
+\f2\b \cf3 <action \cf5 method
+\f1\b0 \cf0 =
+\f2\b \cf2 "setIsPlaneMode"\cf3 ><value>
+\f1\b0 \cf0 1
+\f2\b \cf3 </value></action>
+\f1\b0 \cf0 \
+                
+\f2\b \cf3 </block>
+\f1\b0 \cf0 \
+            
+\f2\b \cf3 </block>
+\f1\b0 \cf0 \
+        
+\f2\b \cf3 </block>
+\f1\b0 \cf0 \
+        
+\f2\b \cf3 <block \cf5 type
+\f1\b0 \cf0 =
+\f2\b \cf2 "core/text_list"\cf3  \cf5 name
+\f1\b0 \cf0 =
+\f2\b \cf2 "additional.product.info"\cf3  />
+\f1\b0 \cf0 \
+    
+\f2\b \cf3 </sales_email_order_items>\
+
+\f0\b0\fs24 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+<!-- Begin wrapper table -->\
+<table cellspacing="0" cellpadding="0" border="0" height="100%" width="100%"  mso-table-lspace="0pt" mso-table-rspace="0pt"                                            border-collapse="collapse" ><tr><td  style="align:center; valign:top;  padding: 20px 0 20px 0; font-family: Gotham, Arial, Verdana, serif; font-weight: normal; border-collapse: collapse; vertical-align: top; font-size: 12px;">\
+            <!-- [ header starts here] -->\
+            <table  style="background-color :FFFFFF cellspacing:0 ;cellpadding:10  ;      border: 1px solid #E0E0E0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">\
+<tr>\
+\
+\
+\
+ <td valign="top" align="center" class="logo"  style=" margin-bottom: 10px; font-family: Gotham, Arial, Verdana, serif; font-weight: normal; border-collapse: collapse; vertical-align: top; font-size: 12px; padding: 25px 0 40px 0;"<a href="\{\{store url=""\}\}"><img src="\{\{var logo_url\}\}" alt="\{\{var logo_alt\}\}" style="margin-bottom:10px;" border="0"/></a></td>\
+\
+                </tr>\
+<!-- [ middle starts here] --><tr>\
+<td style="padding: 20px;  valign=top; font-family: Gotham, Arial, Verdana, serif; font-weight: normal; border-collapse: collapse; vertical-align: top; font-size: 12px;">\
+                    <!-- Begin Content -->\
+\
+\
+\
+\
+\
+<p style="font-size: 11px; font-weight: normal; line-height: 15px; margin: 5px 0; font-family: Gotham, Arial, Verdana, serif;">Invoice  #\{\{var order.increment_id\}\}</p>\
+<p style="font-size: 11px; font-weight: normal; line-height: 15px; margin: 5px 0; font-family: Gotham, Arial, Verdana, serif;"> Order #\{\{var order.increment_id\}\} <small>(placed on \{\{var order.getCreatedAtFormated('long')\}\})</small></p>\
+<p style="font-size: 11px; font-weight: normal; line-height: 15px; margin: 5px 0; font-family: Gotham, Arial, Verdana, serif;">Date \{\{var order.getCreatedAtFormated('short')\}\}</p>\
+\
+<table cellspacing="0" cellpadding="0" border="0" width="610" class="order-info-box" style="margin-top: 35px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">\
+<thead><tr>\
+<th align="left" width="300" style="font-size: 14px; padding: 10px 0 6px 0; border-bottom: 1px solid #a8a8a8; line-height: 1em; font-family: Gotham, Arial, Verdana, serif; font-weight: normal;">Sold to</th>\
+        <th width="70" style="font-family: "Gotham", Arial, Verdana, serif; font-weight: normal;"></th>\
+        <th align="left" width="300" style="font-size: 14px; padding: 10px 0 6px 0; border-bottom: 1px solid #a8a8a8; line-height: 1em; font-family: Gotham, Arial, Verdana, serif; font-weight: normal;">Ship to</th>\
+        <th width="70" style="font-family: Gotham, Arial, Verdana, serif; font-weight: normal;"></th>\
+        <th align="left" width="300" style="font-size: 14px; padding: 10px 0 6px 0; border-bottom: 1px solid #a8a8a8; line-height: 1em; font-family: Gotham, Arial, Verdana, serif; font-weight: normal;">Payment method</th>\
+    </tr></thead>\
+<tbody><tr>\
+<td valign="top" style="font-size: 11px; padding: 5px 0 6px 0; line-height: 16px; font-family: Gotham, Arial, Verdana, serif; font-weight: normal; border-collapse: collapse; vertical-align: top;">\
+\{\{var order.getBillingAddress().format('html')\}\}            \'a0\
+        </td>\
+        <td style="font-family: Gotham, Arial, Verdana, serif; font-weight: normal; border-collapse: collapse; vertical-align: top; font-size: 12px;">\'a0</td>\
+        <td valign="top" style="font-size: 11px; padding: 5px 0 6px 0; line-height: 16px; font-family: Gotham, Arial, Verdana, serif; font-weight: normal; border-collapse: collapse; vertical-align: top;">\
+        \
+  \{\{var order.getShippingAddress().format('html')\}\}\
+\
+            \'a0\
+        </td>\
+        <td style="font-family: Gotham, Arial, Verdana, serif; font-weight: normal; border-collapse: collapse; vertical-align: top; font-size: 12px;">\'a0</td>\
+        <td valign="top" style="font-size: 11px; padding: 5px 0 6px 0; line-height: 16px; font-family: 'Gotham', Arial, Verdana, serif; font-weight: normal; border-collapse: collapse; vertical-align: top;">\
+            <p class="subtitle" style="font-family: Gotham, Arial, Verdana, serif; font-weight: normal;"><strong style="font-family: Gotham, Arial, Verdana, serif; font-weight: normal;">\
+   \{\{var payment_html\}\}\
+</strong></p>\
+\
+\
+\
+        </td>\
+    </tr></tbody>\
+</table>\
+\
+\
+<div style="width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; margin-top: 77px;" >\
+   \{\{layout handle="sales_email_order_items" order=$order\}\}\
+</div>\
+\
+\
+\
+<table style="width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; margin-top: 77px;" class="top-footer-links">\
+<tr>\
+<td style="color: #a1a1a1; font-size: 10px; font-family: Gotham, Arial, Verdana, serif; font-weight: normal; border-collapse: collapse; vertical-align: top; padding: 7px 12px; text-align: center;">\
+            <p style="position: relative; width: 70%; margin: auto; font-family: Gotham, Arial, Verdana, serif; font-weight: normal;">THANKS FOR YOUR PURCHASE AT PAULA J ANZ MATERNITY</p>\
+            <br><p style="position: relative; width: 70%; margin: auto; font-family: Gotham, Arial, Verdana, serif; font-weight: normal;">If you have questions or notes please don\'91t hesitate to contact our</p>\
+            <p style="position: relative; width: 70%; margin: auto; font-family: Gotham, Arial, Verdana, serif; font-weight: normal;">service team: \
+<a href="mailto: sales@paulajanz.com ">   sales@paulajanz.com  </a></p>\
+            <p style="position: relative; width: 70%; margin: auto; font-family: Gotham, Arial, Verdana, serif; font-weight: normal;">Looking forward to hear from you!</p>\
+        </td>\
+\
+    </tr>\
+<tr><td style="border-bottom: 1px solid black; font-size: 10px; font-family: Gotham, Arial, Verdana, serif; font-weight: normal; border-collapse: collapse; vertical-align: top; padding: 7px 12px; text-align: center;">DELIVERY NOTE</td></tr>\
+<tr>\
+<td style="font-size: 10px; color: #a1a1a1; font-family: Gotham, Arial, Verdana, serif; font-weight: normal; border-collapse: collapse; vertical-align: top; padding: 7px 12px; text-align: center;">\
+            <p style="position: relative; width: 70%; margin: auto; font-family: Gotham, Arial, Verdana, serif; font-weight: normal;">\
+                PAULA J ANZ MATERNITY</p>\
+            <p style="position: relative; width: 70%; margin: auto; font-family: Gotham, Arial, Verdana, serif; font-weight: normal;"> Choriner Str. 32</p>\
+            <p style="position: relative; width: 70%; margin: auto; font-family: Gotham, Arial, Verdana, serif; font-weight: normal;">10435 Berlin</p>\
+          <p style="position: relative; width: 70%; margin: auto; font-family: Gotham, Arial, Verdana, serif; font-weight: normal;">  Tel. + 49 3041717014/ Fax. +49 3041717015</p>\
+            <p style="position: relative; width: 70%; margin: auto; font-family: Gotham, Arial, Verdana, serif; font-weight: normal;">Web: <a href="www.paulajanz.com"> www.paulajanz.com </a>/ E-Mail: <a href="mailto:contact@paulajanz.com">   contact@paulajanz.com </a>  </p>\
+            <p style="position: relative; width: 70%; margin: auto; font-family: Gotham, Arial, Verdana, serif; font-weight: normal;">Zust\'e4ndiges Finanzamt: Berlin Prenzlauer Berg USt Id: DE 260541509</p>\
+            <p style="position: relative; width: 70%; margin: auto; font-family: Gotham, Arial, Verdana, serif; font-weight: normal;">Inhaber: Paula J anz</p>\
+            <p style="position: relative; width: 70%; margin: auto; font-family: Gotham, Arial, Verdana, serif; font-weight: normal;">Zust\'e4ndiges Gericht: Berlin</p>\
+            \
+        </td>\
+    </tr>\
+</table>\
+</td>\
+</tr>\
+</table>\
+</td></tr></table>\
+}
